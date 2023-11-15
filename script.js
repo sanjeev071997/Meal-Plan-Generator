@@ -56,7 +56,7 @@ function displayMealPlan(data, numberOfMeals) {
       const cell = mealRow.insertCell();
       const recipe = data.hits[i * weekdays.length + j].recipe;
 
-      // Display recipe information in the cell
+     
       cell.innerHTML = `
             <div class="card">
            <img src="${recipe.image}" alt="${recipe.label}" style="width:100%">
