@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Meal Plan Generator</h1>
+        </header>
+
+        <form id="mealPlanForm">
+            <label for="numberOfMeals">Number of Meals:</label>
+            <select id="numberOfMeals" name="numberOfMeals">
+                <option value="2">Two Meals</option>
+            </select>
+
+            <label for="dietPreference">Diet Preference:</label>
+            <select id="dietPreference" name="dietPreference">
+                <option value="balanced">Balanced</option>
+                <option value="lowFat">Low-Fat</option>
+            </select>
+
+            <label for="healthSpecification">Health Specification:</label>
+            <select id="healthSpecification" name="healthSpecification">
+                <option value="vegan">Vegan</option>
+                <option value="vegetarian">Vegetarian</option>
+            </select>
+
+            <label for="calories">Calories:</label>
+            <input type="number" id="calories" name="calories" required>
+
+            <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+        </form>
+
+        <div id="mealPlanTableContainer">
+            <!-- Meal plan table will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
